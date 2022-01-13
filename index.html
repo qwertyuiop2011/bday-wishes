@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta5/dist/css/tabler.min.css">
+
+    <style>
+        body {
+          background-image: url('bg.PNG');
+          background-attachment: fixed; 
+          background-size: 1500px;
+        }
+    </style>
+
+<script>
+    function showhide() 
+{
+    var x = document.getElementById('wish');
+if (x.style.display == 'none') {
+x.style.display = 'block';
+} else {
+x.style.display = 'none';
+}
+
+var x = document.getElementById('gift');
+if (x.style.display == 'none') {
+x.style.display = 'block';
+} else {
+x.style.display = 'none';
+}
+
+  
+var myAudio = document.getElementById('audio');
+
+{   
+    myAudio.play(); 
+}
+}
+</script>
+
+</head>
+<center>
+<body>
+    <div id= "wish" class="container">
+        <div class="card mt-5 pt-2 col-6" style="width: 300px;">
+            <header>
+                <h1 style="font-size: 30px;">HAPPY BIRTHDAY &#127874;</h1>
+            </header>
+            <body>
+                <img src="cake.gif" onclick=" showhide();">
+            </body>
+        </div>
+    </div>
+
+    <div id= "gift" class="container" style="display: none;">
+        <div class="card mt-5 pt-2 col-6" style="width: 300px; ">
+            <header class="pb-3">
+                <h1 style="font-size: 25px;">MANY MANY HAPPY RETURNS OF THE DAY</h1>
+            </header>
+            <body   >
+                <h1 style=color:blue>Here is a small GIFt for you!!</h1>
+                <a href="https://qwertyuiop2011.github.io/Todolist/">
+                <img src="giftbox.gif">
+                </a>
+            </body>
+        </div>
+    </div>
+</center>
+<audio id="audio" src="audio.mp3"></audio>
+   
+
+</body>
+</html>
